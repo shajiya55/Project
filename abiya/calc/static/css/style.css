@@ -1,0 +1,88 @@
+.navbar{
+    background-color:#720026 !important;
+}
+
+.nav-link{
+    color:#FFF9EC !important;
+
+}
+
+.nav-link:hover{
+    color:#FFDCCC !important;
+    font-weight: bold;
+}
+.blog{
+    color:#D0ADA7;
+
+}
+
+.b:hover{
+    font-style: italic;
+    font-weight: 200;
+}
+.n{
+    color:#FFF9EC;
+    font-family: 'Sacramento', cursive;
+    
+}
+.navbar-brand{
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    transform: skewy(-10deg)
+}
+.slid{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    color:#C44536;
+}
+.hl{   
+     font-family: 'Sacramento', cursive;
+     font-size: 80px;
+
+     color:#FFE8D6;
+    
+}
+.fimg{
+color:#E5DADA !important;
+}
+.footer{
+    background-color:#001524!important;
+    color:#FCEAC5 !important;
+}
+
+.fbrand{
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    font-weight: bolder;
+    transform: skewX(20deg);
+    text-align:right;
+    color: #FCEAC5;
+}
+.ni{
+    background-color: #001524!important;
+}
+.th {
+    text-align: center;
+  }
+.u{
+    text-align: justify;
+}
+
+.tb{
+    background-color: #FFFFFF!important;
+    color: #0E171B!important;
+    font-weight: bold;
+    font-family:  'Sacramento', cursive;
+    font-size: 30px;
+}
+.txt{
+    text-align: center;
+}
+
+.tt{
+    color: #252422!important;
+}
+*{
+    box-sizing: border-box;
+}

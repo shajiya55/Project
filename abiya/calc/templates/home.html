@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %} <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> {% endblock link %}
+
+{% block content %}
+
+<div class="col-sm-12">
+
+<form action="" method="post" enctype="multipart/form-data" >
+  
+  <div id="slide" class="carousel slide" data-ride="carousel">
+  
+    <ol class="carousel-indicators">
+      <li data-target="#slide" data-slide-to="0" class="active"></li>
+      <li data-target="#slide" data-slide-to="1"></li>
+      <li data-target="#slide" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+      <div class="item active">
+      
+        <img src="{% static 'images/l.jpg' %}" alt="cake" width="100%">
+        <div class="carousel-caption">
+        <h3 class="hl" style="color:brown;">Cake</h3>
+        <p class="slid" style="color: seashell;">A party without cake is just meeting.</p>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'images/bb.jpg' %}" alt="ice-cream" style="width:100%;">
+        <div class="carousel-caption">
+        <h3 class="hl"> Spicy </h3>
+        <p class="slid"> Good Food Is Good Mood.</p>
+         </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'images/r5.jpeg' %}" alt="coffe" style="width:100%;">
+        <div class="carousel-caption">
+        <h3 class="hl"> foodies </h3>
+        <p class="slid"> Goodies for foodies.</p>
+    </div>
+   </div>
+   </div>
+    <a class="left carousel-control" href="#slide" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slide" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>  
+</div>
+</div>
+
+</form>
+<hr style="border: 1px solid brown;">
+<div class="col-sm-12">
+  <h1 class="n" style="color:darkgoldenrod; font-weight: bolder;">Restaurent</h1>
+  <div class="container-fluid pt-5">
+   
+              
+                <img src="{% static 'images/fast5.jpg' %}" class="img-fluid pr-5" width="500px">
+                <img src="{% static 'images/fast4.jpg' %}" class="img-fluid pr-5" width="350px">
+                <img src="{% static 'images/fasttt.webp' %}" class="img-fluid pl-3" width="260px">
+           <p class="pt-3 pb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sapiente non sunt quod beatae ipsum quas quisquam quidem porro repudiandae, voluptas pariatur veritatis tenetur incidunt, aspernatur aliquid corporis perferendis. Recusandae!</p>
+
+<br>           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nisi beatae inventore nam ad facilis, atque impedit. Delectus iste rem commodi autem dolore consequatur, numquam obcaecati itaque totam quibusdam incidunt.</p>
+</div>
+</div>
+
+<div class="col-sm-12">
+<div class="container-fluid pb-5">
+        <section class="text-center  tt">
+
+    <hr style="border: 1px solid brown;">
+          <h2 class=" font-weight-bold my-5">Abiya</h2>
+
+          <div class="wrapper-carousel-fix ">
+            
+            <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+              data-interval="false">
+              
+              <div class="carousel-inner" role="listbox">
+              
+                <div class="carousel-item active">
+                  <div class="testimonial">
+                  
+                    <div class="avatar mx-auto mb-4">
+                      <img src="{% static 'images/shajiya.jpg' %}" class="rounded-circle img-fluid" width="60px"
+                        alt="abiya">
+                    </div>
+                    
+                    <p>
+                      <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                      eos
+                      id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore
+                      sit, aspernatur praesentium iste impedit quidem dolor veniam.
+                    </p>
+                    <h4 class="font-weight-bold">Shajiya Banu</h4>
+                    <h6 class="font-weight-bold my-3">Founder at Abiya</h6>
+                   
+                    <i class="fas fa-star blue-text"> </i>
+                    <i class="fas fa-star blue-text"> </i>
+                    <i class="fas fa-star blue-text"> </i>
+                    <i class="fas fa-star blue-text"> </i>
+                    <i class="fas fa-star-half-alt blue-text"> </i>
+                  </div>
+                </div>
+              </div>
+</div>
+<hr style="border: 1px solid brown;">
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endblock link %}
+{% block content %}
+
+<div class="col-sm-12">
+    <div class="bg-img container-fluid mt-5">
+        <form action="" method='POST' class="pt-5 container">
+        {% csrf_token %}
+        {{fm.as_p}} 
+        <input type="submit" class="btn btn-danger" value="Send">
+        </div>
+        </form>
+        </div>
+{% endblock content %}

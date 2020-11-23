@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+<div class="col-sm-12 mt-5">
+    <table class="table table-hover tb">
+        <thead>
+          <tr class="tb">
+            <th scope="col"></th>
+            <th scope="col">name</th>
+            <th scope="col">price</th>
+          </tr>
+        </thead>
+        <tbody class="tb">
+          {% for stud in stud %}
+          <tr>
+            <th><img src="{{stud.mlogo.url}}" class="img-responsive rounded-circle" width="100px"></th>
+            <td>{{stud.mname}}</td>
+            <td>{{stud.mprice}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </form>
+</div>
+{% endblock content %}

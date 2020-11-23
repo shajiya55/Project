@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    {% block link %} {% endblock link %}
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+                <a class="navbar-brand pl-5" href="#">Abiya<br>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav pl-5">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown pl-3">
+                        <a class="nav-link" href="{% url 'menu' %}">
+                          Menu
+                        </a>
+                      </li>
+                    <li class="nav-item pl-3">
+                      <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                      <li class="nav-item pl-3">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                      </li>
+                      
+                      <li class="nav-item pl-5">
+                        <a class="nav-link btn border-danger" href="{% url 'table' %}">Book A Table</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+</div> 
+
+<div class="container-fluid">
+    {% block content %}
+    {% endblock content%}
+</div>
+
+<div class="container-fluid mt-5">
+<div class="container-fluid ni ">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="footer">
+        <h3 class="pl-3">Follow</h3>
+      <h3 class="pl-3"><i class="fab fa-facebook"></i> 
+        <i class="fab fa-instagram-square"></i> 
+        <i class="fab fa-twitter"></i> </h3> <br>
+        <h3 class="pl-3">Address</h3>
+        <p class="pl-3">street 1234 <br> city AA</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="footer">
+        <h1>Opening Hours</h1>
+        <table>
+          <tr><th>Sunday</th><td>Closed</td></tr>
+          <tr><th>Monday</th><td>9am - 5pm</td></tr>
+          <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+          <tr><th>Friday</th><td>9am - 5pm</td></tr>
+          <tr><th>Saturday</th><td>9am - 5pm</td></tr>
+          </table>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="fbrand">Abiya</p>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>   
+<script src="{% static 'js/popper.min.js' %}"></script>   
+<script src="{% static 'js/bootstrap.min.js' %}"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="{% static 'js/all.min.js' %}"></script>   
+</body>
+</html>

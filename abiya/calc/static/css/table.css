@@ -1,0 +1,14 @@
+.tbi{
+    background-color: #F4F3EE !important;
+    color:#252422;
+    text-align: center;
+    opacity: 0.9;
+}
+*{
+     box-sizing: border-box;
+}
+
+.tbii{
+    background-image: url("../images/wood.jpg");
+
+}

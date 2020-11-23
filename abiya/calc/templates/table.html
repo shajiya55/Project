@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/table.css' %}"> {% endblock link %}
+{% block content %}
+<div class="col-sm-12">
+<div class="container-fluid  pt-5 mt-5 pb-5 tbii">
+    <div class="tbi text-center container mt-3  pt-5 pb-3" style="width:500px;">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Welcome!!!</h1><br>
+            {{fm.as_p}}
+            <input type="submit" class="btn btn-dark" value="Request Booking">
+        </form>
+    </div>
+</div>
+</div>
+{% endblock content %}
