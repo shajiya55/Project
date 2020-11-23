@@ -1,0 +1,80 @@
+.font{
+    font-family: 'Pacifico', cursive;
+    color:white;
+}
+.fn{
+    font-family: 'Kaushan Script', cursive;
+font-family: 'Pacifico', cursive;
+ 
+}
+html,body {
+    height: 100% !important;
+    width:100%;
+}
+  
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container-fluid {
+    min-height: 100% !important;
+    
+}
+
+a.nav-link:hover{
+    color:yellow !important;
+}
+
+    a.nav-link{
+        color:wheat !important;
+}
+a.nav-link.active{
+    color:black;
+    font-weight: bold;
+    background-color: lightslategray;
+}
+
+.btn:hover{
+    background-color: grey ;
+}
+
+.i-color{
+    color:limegreen!important;
+}
+
+@media only screen and (device-width: 768px) {
+    /* For general iPad layouts */
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+
+}
