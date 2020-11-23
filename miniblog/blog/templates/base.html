@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    {% block title %}<title>Base</title>{% endblock title %}
+</head>
+<body>
+  
+<div class="containr-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand nav-colo" >Miniblog</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link {{home}} nav-colo" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link {{contact}} nav-colo" href="{% url 'contact' %}">contact</a>
+            <a class="nav-link {{dashboard}} nav-colo" href="{% url 'dashboard' %}">Dashboard</a>
+            <a class="nav-link {{signup}} nav-colo" href="{% url 'signup' %}">signup</a>
+            <a class="nav-link {{login}} nav-colo" href="{% url 'login' %}">login</a>
+            <a class="nav-link {{logout}} nav-colo" href="{% url 'logout' %}">logout</a>
+          </div>
+        </div>
+      </nav>
+</div> 
+
+<div class="row">
+      {% block side %}
+      {% endblock side %}
+
+        {% block content %}
+
+        {% endblock %}  
+</div>  
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/pooper.js' %}"></script>  
+<script src="{% static 'js/bootstrap.js' %}"></script>  
+<script src="{% static 'js/all.min.js' %}"></script>    
+</body>
+</html>

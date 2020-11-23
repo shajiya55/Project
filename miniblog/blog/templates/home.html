@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}<title>home</title>{% endblock %}
+
+{% block content %}
+<div class="col-sm-10 py-5 mx-5">
+    {% for stud in stud %}
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h1 class="display-4 jumbo-colo">{{stud.title}}</h1>
+          <p class="lead jumbo-colo">{{stud.desc}}</p> 
+        </div>
+      </div>
+    {% endfor %} 
+</div>
+{% endblock content %}

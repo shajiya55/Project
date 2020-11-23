@@ -1,0 +1,30 @@
+.nav-colo{
+    color: lightsteelblue !important;
+    font-weight:420;
+}
+
+.jumbo-colo{
+    color: linen !important;
+}
+
+.navbar-brand{
+    color:whitesmoke !important;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}
+
+.nav-link:focus{
+    color:lightslategrey !important;
+}
+
+a.nav-link.active{
+    color: whitesmoke !important;
+}
+
+.profile{
+    font-weight: bold;
+}
+.group{
+    color: teal !important;
+}
