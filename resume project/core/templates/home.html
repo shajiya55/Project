@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Profile
+{% endblock title %}
+
+
+{% block content %}
+<div class="text-center">
+    <img src="{% static 'core\images\web\download.png' %}" class="img-thumbnail mt-5 mb-5" width="250px" height="150px">
+
+</div>
+
+<h1 class="font mt-4">hello,</h1>
+<div class=" mx-5 text-justify px-3 " style="color:white; line-height: 2rem; ">I am Shajiya Banu. It's my resume and also my resume project. I am from gangapur,bhilwara.
+
+    <br><br> I will complete my bachelor degree in bca in the year of 2021 from bhupal nobel's college,mlsu university. I got the certificate and prize in bca for first rank.
+i also got goggle certificate for digital marketing.
+
+<br><br>i have done html , css , javascript , bootstrap , python , django etc. courses.
+
+</div>
+
+<div class="mt-5 text-center">
+    <button class="btn border-warning " style="color: tomato;"><a href="{% url 'cont' %}" style="color:yellow;">Contact</a></button>
+</div>
+    
+{% endblock content %}
+
+
+
+
