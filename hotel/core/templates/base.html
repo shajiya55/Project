@@ -31,20 +31,20 @@
           <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                <a class="nav-link {{home}}" href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'rooms' %}">Rooms</a>
+                <a class="nav-link {{room}}" href="{% url 'rooms' %}">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link {{about}}" href="{% url 'about' %}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                <a class="nav-link {{contact}}" href="{% url 'contact' %}">Contact</a>
               </li>
 
                <li class="nav-item cta">
-                <a class="nav-link" href="{% url 'booknow' %}"><span>Book Now</span></a>
+                <a class="nav-link {{booknow}}" href="{% url 'booknow' %}"><span>Book Now</span></a>
               </li>
             </ul>
             

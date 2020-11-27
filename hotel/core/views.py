@@ -3,11 +3,13 @@ from .forms import proomforms,Contactform,ReserveForm
 from .models import proom,Contact
 # Home
 def home(request):
-    return render(request,'index.html')
+    context={'home':'active'}
+    return render(request,'index.html',context)
 
 # about
 def about(request):
-    return render(request,'about.html')  
+    context={'about':'active'}
+    return render(request,'about.html',context)  
     
 # room
 def room(request):
@@ -16,8 +18,8 @@ def room(request):
         if fm.is_valid:
             fm.save()
     fm=proomforms()
-    stud=proom.objects.all().order_by('price')      
-    return render(request,'rooms.html',{'fm':fm,'stud':stud})    
+    stud=proom.objects.all().order_by('price')    
+    return render(request,'rooms.html',{'fm':fm,'stud':stud,'room':'active'})    
  
 # booknow
 def booknow(request):
@@ -28,7 +30,7 @@ def booknow(request):
             fm=ReserveForm()
     else:
         fm=ReserveForm() 
-    return render(request,'booknow.html',{'fm':fm})    
+    return render(request,'booknow.html',{'fm':fm,'booknow':'active'})    
 
 # contact
 def contact(request):
@@ -39,6 +41,6 @@ def contact(request):
             fm=Contactform()
     else:
         fm=Contactform()        
-    return render(request,'contact.html',{'fm':fm})    
+    return render(request,'contact.html',{'fm':fm,'contact':'active'})    
 
   
